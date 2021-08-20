@@ -1,0 +1,20 @@
+{
+	"recommendations": [
+		"bierner.markdown-emoji",
+		"bierner.markdown-preview-github-styles",
+		"christian-kohler.path-intellisense",
+		"dbaeumer.vscode-eslint",
+		"eamodio.toggle-excluded-files",
+		"editorconfig.editorconfig",
+		"gruntfuggly.todo-tree",
+		"mrmlnc.vscode-scss",
+		"msjsdiag.debugger-for-chrome",
+		"pflannery.vscode-versionlens",
+		"pkief.material-icon-theme",
+		"richie5um2.vscode-sort-json",
+		"simonsiefke.svg-preview",
+		"stylelint.vscode-stylelint",
+		"usernamehw.errorlens",
+		"formulahendry.auto-rename-tag"
+	]
+}

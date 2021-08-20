@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useMovieList } from './hooks/useMovieList';
+import { Card } from '@atoms/Card';
 
 function App() {
+  const [ movieList ] = useMovieList();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+	<div>
+		{!movieList ? '...loading' : 
+			movieList.results.map((movie: any) => (
+				<div key={movie.id}>
+					<div>{movie.title}</div>
+					<div>
+						<img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt="" />
+					</div>
+				</div>
+			))
+		}
+	</div>
   );
 }
 

@@ -1,0 +1,63 @@
+{
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
+	"debug.console.wordWrap": false,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"errorLens.delay": 1000,
+	"errorLens.gutterIconsEnabled": true,
+	"errorLens.gutterIconSet": "circle",
+	"errorLens.followCursor": "activeLine",
+	"eslint.options": {
+		"configFile": "./.eslintrc.js"
+	},
+	"files.associations": {
+		"*.json": "jsonc",
+		"package.json": "json"
+	},
+	"files.eol": "\n",
+	"files.exclude": {
+		".cache": false,
+		".vscode": false,
+		"**/*.scss.d.ts": false,
+		"build": false,
+		"node_modules": false,
+		"robots.txt": false,
+		"src/browserconfig.xml": false,
+		"src/google*.html": false,
+		"src/manifest.webmanifest": false,
+		"src/nortonsw_*.html": false
+	},
+	"javascript.preferences.quoteStyle": "single",
+	"javascript.validate.enable": false,
+	"js/ts.implicitProjectConfig.checkJs": true,
+	"material-icon-theme.folders.associations": {
+		"contexts": "database",
+		"ui": "theme"
+	},
+	"search.exclude": {
+		".cache": true,
+		"build": true,
+		"private": true
+	},
+	"stylelint.configOverrides": {
+		"ignoreFiles": [
+			"**/*.tsx"
+		]
+	},
+	"stylelint.enable": true,
+	"terminal.integrated.rightClickBehavior": "copyPaste",
+	"terminal.integrated.scrollback": 10000,
+	"todo-tree.general.tags": [
+		"@todo"
+	],
+	"todo-tree.regex.regex": "(//|#|<!--|/\\*|^\\s*\\*)\\s*($TAGS)",
+	"todo-tree.tree.labelFormat": "${after}",
+	"typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+	"typescript.preferences.quoteStyle": "single",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.tree.indent": 22
+}
