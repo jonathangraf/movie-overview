@@ -4,27 +4,13 @@
   "private": true,
   "proxy": "https://api.themoviedb.org/3/discover/movie/",
   "dependencies": {
-    "@craco/craco": "^6.2.0",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.6.2",
-    "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9",
-    "clsx": "^1.1.1",
-    "node-sass": "^6.0.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.3.5",
-    "web-vitals": "^2.1.0"
+    "react-dom": "^17.0.2"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "dev": "webpack serve --open chrome",
+    "build": "webpack --mode production",
+    "start": "npm run dev"
   },
   "eslintConfig": {
     "extends": [
@@ -45,6 +31,9 @@
     ]
   },
   "devDependencies": {
-    "typescript-plugin-css-modules": "^3.4.0"
+    "@babel/preset-react": "^7.14.5",
+    "babel": "^6.23.0",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
   }
 }
